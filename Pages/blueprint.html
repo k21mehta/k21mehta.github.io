@@ -308,7 +308,7 @@
                                         <a href="https://www.figma.com/proto/xtAj393zAPpsMvOGjFMBek/Non-VC_UI?node-id=11%3A4&scaling=min-zoom" class="link-ui">The previous utility panel seen here</a> had 
                                         4 new funcitionalities introduced in the history tab with the proposed design: <span style="font-style: italic;">revert, merge, rename, and, version compare.</span>
                                     </div>
-                                    <div style="display: flex; padding-top: 20px;">
+                                    <div style="display: flex; padding-top: 20px;" id="version-card">
                                         <img src="../Images/VC_Modal_UI.png" alt="blueprint" class="image-modal-ui">
                                         <img src="../Images/VC_Modal_UI_2.png" alt="blueprint" class="image-modal-ui">
                                     </div>
@@ -318,7 +318,7 @@
                                         The version compare icon was the entry point to view the comparsion between two artifacts. For this, I had two design solutions ideated from user interviews - <a href="https://www.figma.com/proto/xtAj393zAPpsMvOGjFMBek/Non-VC_UI?node-id=11%3A7&scaling=min-zoom">a single panel view</a> and <a href="https://www.figma.com/proto/xtAj393zAPpsMvOGjFMBek/Non-VC_UI?node-id=11%3A10&scaling=min-zoom">a side-by-side comparsion view.</a> 
                                         <br><br><br>
                                         <div>
-                                            <img src="../Images/single_panel_vc.png" alt="blueprint" class="image-design-solution-1">
+                                            <img src="../Images/single_panel_VC.png" alt="blueprint" class="image-design-solution-1">
                                             <figcaption class="zoom-caption" style="margin-left: 20px; padding-top:10px;">Version Compare Single Panel Design</figcaption>
                                         </div>
                                         <br><br>
@@ -358,7 +358,33 @@
                                                     <img src="../Images/html_diff.png" alt="blueprint" class="img-feature_implementation" style="width:80%; margin-top:50px;">
                                                     <figcaption class="zoom-caption" style="margin-right: 20px; padding-top:10px;">Analysis of Edge Cases Using DaisyDiff Library</figcaption>
                                                 </div>
-                                    
+                                            
+                                                <br>
+                                                <br>
+                                            <h3 class="case-study-small-title">Iterative Design Process</h3>
+                                           Before breaking down the user requirments and technical user storeis for the version compare feature, I analyzed the new user experience with quick mockups on Figma. 
+                                           Here I realized that the user experience could be kept consistent if existing components in the Storyteller application were reused.                                               
+                                           <br>
+                                           <br>
+                                           <b>Reusing components</b> was important as it creates a consistent user experience. 
+                                           <br>
+                                           <br>
+                                        
+                                            The Relationships Tab consisted of the expand details arrow link and a checkbox for each relationship card which could be used for the History Tab version cards to implement
+                                             the version compare functionality. Previously, the <a href="#version-card">version cards</a> had to be individually selected and had no checkboxes to indicate which two cards were selected for the version compare feature. Hence, reusing of Relation Tab components would decrease 
+                                             development time.                                             
+                                            <br>
+                                            <br><br>
+                                            
+                                            <div>
+                                                <img src="../Images/reuse_componenet.png" alt="blueprint" class="image-design-solution-1">
+                                                <figcaption class="zoom-caption" style="margin-left: 20px; padding-top:10px;">Version Compare Single Panel Design</figcaption>
+                                            </div>
+
+                                            <br>
+                                            <br>
+                                            In addition to these design changes, workflow changes were required so that the user is able to select two version cards in order to perform version compare.
+                                            This became a complex issue as checkboxes are a symbol of multiple selection but the version compare functionality would only occur if two version cards were selected. 
                                         </div>
                                     </div>
                             </div>                                
@@ -366,9 +392,28 @@
     
         </section>
 
-        <section id="sec2" class="sections" style="padding-top: 500px;">
+        <section id="sec2" class="sections" style="padding-top: 50px;">
                 <h1>Solution</h1>
-              
+        
+                I explored several different solutions and workflows before coming up with a proposal. Inspired by the application Ritual which I used to order my lunch meals, I found a way to keep the application consistent with checkboxes
+                while comparing two versions at a time. 
+                <!-- <div style="padding-top: 20px; width:97%;">
+                    <h3 class="case-study-small-title">Feature implementation</h3>
+                    Once a design solution was selected, it was important to understand the work behind the feature. Front-end libraries were explored to ensure that the feature's functionality worked as promised to user. 
+                     <br><br>
+                    <b>Edge cases</b> were important to consider as the Storyteller product allows users to create lists, tables, lists within tables, and other cases. 
+                    It is essential to understand how version compare would work for all use cases in order to prioritize requirements for the minimum viable feature.
+                    <br><br>
+                    
+                    Considering these edge cases, the front-end developers and I decided to use DaisyDiff, a Java library in order to implement this feature into the Storyteller application.
+                    We analyzed how the DaisyDiff library performed under the various edge cases looking at the differences in text. The library perform well for the basic use cases such as understanding textual changes in lists, tables, and plain text. Despite having some bugs that didn't associate with the major use cases, the library was chosen as it went above and beyond by capturing style changes.
+
+
+                        <div>
+                            <img src="../Images/html_diff.png" alt="blueprint" class="img-feature_implementation" style="width:80%; margin-top:50px;">
+                            <figcaption class="zoom-caption" style="margin-right: 20px; padding-top:10px;">Analysis of Edge Cases Using DaisyDiff Library</figcaption>
+                        </div>
+                </div> -->
         </section>
 
         <section id="sec3" class="sections">
