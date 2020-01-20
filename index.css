@@ -26,6 +26,13 @@ a {
     font-family: Quicksand;
 }
 
+.container-3{
+    width: 1150px;
+    margin-left: calc((100% - 1180px) / 2);
+    font-family: Quicksand;
+}
+
+
 .main-nav ul {
     list-style-type: none;
     margin: 0;
@@ -97,7 +104,15 @@ a {
     width: 252px;
 }
 
-.nav-link {
+.nav-link{
+    border-bottom: 3px solid #EEEEEE;
+    margin-left: 43px;
+    width: 5em;
+    text-align: center;
+}
+
+
+.nav-link, .nav-links-2 {
     list-style-type: none;
     font-family: lato-light, sans-serif;
     font-size: 16px;
@@ -105,7 +120,6 @@ a {
     text-decoration: none;
     padding-bottom: 10px;
     color: black;
-    border-bottom: 3px solid #EEEEEE;
     margin-left: 43px;
     width: 5em;
     text-align: center;
@@ -937,7 +951,14 @@ figcaption {
 	transition: transform 400ms ease-out;
 }
 
-.gallery-image:hover {
+.gallery-image-2{
+    width: 90%;
+    height: auto;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.gallery-image:hover, .gallery-image-2{
 	transform: scale(1.15);
 }
 
@@ -960,4 +981,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
 	.gallery-item {
 		margin: 0;
 	}
+}
+
+
+.top-bar{
+    padding-left: 35%;
+}
+
+.interests-back{
+    padding-top: 90px;
 }

@@ -1,5 +1,6 @@
-<script>
-$(function(){
+
+  
+  $(function(){
   // activate scrollspy on sections side navigation
   $('body').scrollspy({ 
     target: '.fixed-side-navbar',
@@ -14,4 +15,3 @@ $(function(){
 
 
 
-</script>
