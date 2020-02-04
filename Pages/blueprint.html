@@ -397,7 +397,42 @@
                 Through iteration it was understood that the version compare feature would be more consistent with the whole application if it reused components found in other Utility Panel tabs such as the Relationship Tab. I explored several different solutions and workflows before coming up with a proposal. Inspired by the application Ritual which I used to order my lunch meals, I found a way to keep the application consistent with checkboxes while comparing two versions at a time. 
                 <br><br>
                 Using Ritual almost every other day provided for a user experience that I found useful in building out the version compare feature. When I used to select my salad toppings, I realized that once I had exceeded the limit of toppings for the meal then the UI automatically deselected the first topping I chose. This user experience was suitable for the version compare feature as the user could select multiple versions but the version compare icon would only occur on the last two versions selected. 
+                <br><br><br><br>
+                <div>
+                    <video class="video-border" autoplay="autoplay" controls="controls" muted="" style="width: 400px;">
+                    <source src="../Images/ritual_feature.mov">
+                  </video>
+                  <figcaption class="zoom-caption" style="margin-left: 20px; padding-top:10px;">Selecting Salad Greens on the Ritual Application</i></figcaption>
+                </div>
+                <br><br>
+                The version compare feature became a solid feature using existing components and the slection concept discovered using the Ritual application. The selection concept was used to select version cards for comparsion. 
+                When two versions were selected then the History tab header would display icons. These icons included the version compare and merge feature. The revert icon was placed on the bottom left of all but the latest version, so that the user can easily revert to any version easily.
+                <br><br>
+                <br><br>
 
+                <div>
+                    <video class="video-border" autoplay="autoplay" controls="controls" muted="" style="width: 900px;">
+                    <source src="../Images/final_feature.mov">
+                  </video>
+                  <figcaption class="zoom-caption" style="margin-left: 20px; padding-top:10px;">Version Compare Feature Demo with Revert and Merge</i></figcaption>
+                </div>
+                <br><br>
+
+                The final solution included the version compare modal which was built resuing artifact's user interface. As seen in the video, the modal for version comparison looks similar to
+                the user interface behind the modal with comparsion shows in red and green. The merge functionality was labelled as 'Restore Select Values' which was another reused component from the Relationships tab.
+                This modal highlighted key property changes and allowed the user to merge two different versions. The user is also provided with a summary of the merges in the 'Summary' tab of this modal.
+                Essentially, this merge modal was easy to reuse as it captured essential values that users would look at when comparing two different versions.
+
+                <br><br>
+                One of the main features for this feature set was revert, which allowed the user to restore all values of a previous version. When writing out the user stories for this feature, I realized that all but the latest version 
+                could be used as a possible version that a user would like to restore. If there is only one version then reverting was not an option. To simplify the experience, reevert icons were in all but the latest version. 
+
+                <br><br>
+                Additionally, use cases that were raised during user interviews were considered. For example, some stakeholders wanted a simple version comparsion between any version selected and its pervious version.
+                To capture this use case, I made use of the version cards and the expand button in order to provide major details that highlighted changes between a version and its previous state. 
+                These major details included relationship, property, and files (attachments and documents) changes with count. 
+
+                <br><br>
                 <!-- <div style="padding-top: 20px; width:97%;">
                     <h3 class="case-study-small-title">Feature implementation</h3>
                     Once a design solution was selected, it was important to understand the work behind the feature. Front-end libraries were explored to ensure that the feature's functionality worked as promised to user. 
@@ -419,7 +454,19 @@
 
         <section id="sec3" class="sections">
                 <h1>Learnings</h1>
-              
+                <br>
+                Throughout this experience, I was able to work with various teams and learn many new things!
+                This was my first expereince in the field of product management and a memorable one.
+                I wore many different hates as I executed a feature from conception to development.
+                <br><br>
+                It was a very unique and different role than I was used to,
+                 so I had to learn a lot while executing an essential feature. There was a lot of focus on communicating with different teams like
+                 Sales, Marketing, Developers, and Product to ensure transparency and results. When I left this internship, the minimum viable feature was on beta and 
+                 ready for testing and iteration. 
+                 <br><br>
+                 In the end, this was one of my favourite internships as it provided a foundation to understanding the role of a product manager and the importance of
+                 product scoping, prioritization, and execution.
+
         </section>
 
     </div>
