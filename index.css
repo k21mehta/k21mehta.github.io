@@ -298,6 +298,17 @@ i {
     margin-top: 25px;
 }
 
+.up{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(225deg);
+    margin-top: -45px;
+    margin-left: 1300px;
+}
+
+.middle-img{
+    margin-left: 25%;
+}
+
 .container-11{
     display: -webkit-box;
     display: -webkit-flex;
@@ -498,7 +509,7 @@ h1 {
 }
 
 .footer p{
-   padding-top: 5%;
+   padding-top: 3%;
    text-align: center;
    font-family: Quicksand;
 }
@@ -604,6 +615,13 @@ h1 {
     padding-top: 50px;
   }
 
+  .full-preview-mobile{
+    max-width: 60%;
+    padding-top: 50px;
+    justify-content: center;
+	align-items: center;
+  }
+
 .sections h1{
     font-weight: bold;
     color: #a339b0;
@@ -632,24 +650,29 @@ h1 {
     padding: 30px 0;
     transition: all .3s;
 }
+
 .fixed-side-navbar:hover {
     background: white;
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
+
 .fixed-side-navbar:hover .nav > li > a > span {
-    color: #b8b1b9;
+    color: #a339b0;
     display: block;
     font-family: Quicksand;
 }
+
 .fixed-side-navbar .nav > li.active a {
     background-color: transparent;
     color:#a339b0;
 }
+
 .fixed-side-navbar .nav > li.active a:after {
     transform: scale(0.9);
 }
+
 .fixed-side-navbar .nav > li.active a:before {
     content: '';
     position: absolute;
@@ -668,16 +691,18 @@ h1 {
 }
 
 .fixed-side-navbar .nav > li a {
-    color: black;
+    color:#a339b0;
     min-height: 32px;
     background: transparent;
     padding: 5px 45px 5px 25px;
     border-right: none;
 }
+
 .fixed-side-navbar .nav > li a span {
     display: none;
     transition: all .2s;
 }
+
 .fixed-side-navbar .nav > li a:after {
     content: '';
     position: absolute;
@@ -687,7 +712,7 @@ h1 {
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    background: rgba(0,0,0,0.6);
+    background: #a339b0;
     transition: all .3s;
     transform: scale(0.6);
 }
@@ -726,6 +751,13 @@ h1 {
     border: solid 2px #a339b0;
 }
 
+.img-sidebyside{
+    width: 60%;
+    border: solid 2px #a339b0;
+    margin-top: 50px;
+    align-items: center;
+}
+
 .image-design-solution-2{
     display: block;
     margin-left: -90px;
@@ -741,7 +773,7 @@ figcaption {
     text-align: center;
 }
 
-.image-competitive:hover, .image-firstui:hover, .image-design-solution-1:hover, .image-design-solution-2:hover{
+.image-competitive:hover, .image-firstui:hover, .image-design-solution-1:hover, .image-design-solution-2:hover, .img-sidebyside:hover{
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
@@ -997,4 +1029,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.fixed-side-navbar li {
+    color: #a339b0;
+}
+
+.fixed-side-navbar li span {
+    color: black;
 }
